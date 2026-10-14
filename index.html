@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tran Dang Duc | Game Developer (Unity)</title>
+<meta name="description" content="Game developer (Unity) based in Hanoi, Vietnam. Shipped games on Meta Quest, Steam and mobile, including titles with 1M+ and 10M+ downloads. Open to remote work.">
+<meta property="og:title" content="Tran Dang Duc | Game Developer (Unity)">
+<meta property="og:description" content="Game developer (Unity) based in Hanoi, Vietnam. Shipped games on Meta Quest, Steam and mobile, including titles with 1M+ and 10M+ downloads. Open to remote work.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#0d1117;--panel:#151b24;--line:#263041;--text:#e6edf3;--muted:#9aa7b4;--accent:#5ec8f2;--accent2:#7ee0b8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.hero{padding:88px 0 40px}
+.eyebrow{color:var(--accent2);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin:0 0 12px}
+h1{font-size:clamp(36px,6vw,56px);line-height:1.08;margin:0 0 10px;letter-spacing:-.02em}
+.role{font-size:clamp(20px,2.6vw,26px);color:var(--muted);margin:0 0 22px;font-weight:500}
+.lead{font-size:19px;max-width:680px;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--panel)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#06121a}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:44px 0 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font-size:24px;line-height:1.2}
+.stat span{color:var(--muted);font-size:14px}
+section{padding:56px 0 8px}
+h2{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 26px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.media{aspect-ratio:16/9;background:#0a0e14;display:block;overflow:hidden}
+.media img{width:100%;height:100%;object-fit:cover;display:block}
+.media img.left{object-position:0 50%}
+.media.ph{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 20% 10%,#1f6f5b 0,#123a52 45%,#0b1520 100%)}
+.media.ph span{font-size:26px;font-weight:700;text-align:center;padding:0 24px;text-shadow:0 2px 12px #0008}
+.body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted);font-size:14px}
+.card h3{margin:0;font-size:21px;line-height:1.25}
+.rolechip{align-self:flex-start;background:#10322a;color:var(--accent2);border:1px solid #1d5545;border-radius:999px;padding:3px 12px;font-size:13px;font-weight:600}
+.card p{margin:0}
+.card ul{margin:0;padding-left:18px;color:#cfd8e1}
+.card li{margin:3px 0}
+.metrics{display:flex;flex-wrap:wrap;gap:8px}
+.metrics span{background:#12263a;border:1px solid #1f3d5a;color:#cde9fb;border-radius:8px;padding:4px 10px;font-size:13.5px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.tags span{color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:12.5px}
+.cardlink{font-weight:600}
+.also{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.also li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.also small{color:var(--muted);font-size:14px}
+.skills{display:grid;grid-template-columns:200px 1fr;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.skills div{padding:14px 18px;border-bottom:1px solid var(--line)}
+.skills div:nth-child(odd){color:var(--accent2);font-weight:600;background:var(--panel)}
+.skills div:nth-last-child(-n+2){border-bottom:0}
+.how{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.how div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.how b{display:block;margin-bottom:6px}
+.how p{margin:0;color:#cfd8e1}
+.cta{margin:64px 0 0;padding:40px;border-radius:20px;background:linear-gradient(135deg,#123a52,#10322a);border:1px solid #1f4a5a;text-align:center}
+.cta h2{margin-bottom:10px}.cta p{margin:0 0 22px;color:#cfe3ee}
+.cta .btns{justify-content:center}
+.links{display:flex;flex-wrap:wrap;gap:6px 18px}
+.card.featured{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+.card.featured .media{align-self:center;margin:22px 0 22px 22px;border-radius:12px}
+.media.video{position:relative}
+.media .play{position:absolute;left:50%;top:50%;width:78px;height:78px;margin:-39px 0 0 -39px;border-radius:50%;background:rgba(6,18,26,.72);border:2px solid #fff;box-shadow:0 6px 24px #0009;transition:background .15s}
+.media .play::after{content:"";position:absolute;left:30px;top:22px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #fff}
+.media .playlabel{position:absolute;left:12px;bottom:12px;background:rgba(6,18,26,.8);color:#fff;padding:4px 10px;border-radius:6px;font-size:13px;font-weight:600}
+.media.video .play{top:76%}
+.media.video:hover .play{background:var(--accent)}
+.media iframe{width:100%;height:100%;border:0;display:block}
+footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
+@media (max-width:860px){.card.featured{display:flex}.card.featured .media{margin:0;border-radius:0}.grid,.how{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:1fr 1fr}.skills{grid-template-columns:1fr}.skills div:nth-child(odd){border-bottom:0;padding-bottom:4px}.skills div:nth-child(even){padding-top:0}header.hero{padding-top:56px}.cta{padding:28px 20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">Available for remote work</p>
+    <h1>Tran Dang Duc</h1>
+    <p class="role">Game Developer (Unity)</p>
+    <p class="lead">I build and ship Unity games for Meta Quest, mobile and PC, taking them from first prototype to store release.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:trandangducbkhn@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/tran-duc-85b570175/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="#work">See my work</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>6 years</b><span>building games with Unity</span></div>
+      <div class="stat"><b>11M+</b><span>Google Play downloads on games I worked on</span></div>
+      <div class="stat"><b>4.6★</b><span>my solo Meta Quest game (45 ratings)</span></div>
+      <div class="stat"><b>3 platforms</b><span>Meta Quest · Steam · Android</span></div>
+    </div>
+  </header>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <p class="sub">What I built on each project, and what I didn't.</p>
+    <div class="grid">
+    <article class="card featured" id="goal-poacher">
+      <a class="media video" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener" data-yt="ku2OKv7F0FQ"><img src="assets/goal-poacher.jpg" alt="Football: Goal Poacher (Soccer) key art" loading="lazy"><span class="play" aria-hidden="true"></span><span class="playlabel">Watch trailer</span></a>
+      <div class="body">
+        <div class="meta"><span>Meta Quest</span><span>2024 – 2026</span></div>
+        <h3>Football: Goal Poacher (Soccer)</h3>
+        <span class="rolechip">Solo developer</span>
+        <p>A VR football game for Meta Quest that I built entirely on my own, from the first prototype to store release.</p>
+        <ul><li>Physics-driven VR gameplay, gameplay AI, animation, progression and VR UI</li><li>Data-driven Unity Editor tools for creating and tuning content</li><li>Meta XR and Meta Platform services; CPU, memory and rendering optimization for standalone Quest; custom shaders</li><li>Built with an agentic AI workflow: I orchestrate multiple coding sub-agents in parallel, while a separate model runs QA, reviewing screenshots, verifying every change and play-testing the game itself</li></ul>
+        <div class="metrics"><span>4.6★ on the Meta Quest Store (45 ratings)</span><span>Early Access</span></div>
+        <div class="tags"><span>Unity</span><span>C#</span><span>Meta XR SDK</span><span>Standalone Quest</span><span>Shaders</span><span>Multi-agent AI workflow</span></div>
+        <div class="links"><a class="cardlink" href="https://www.meta.com/experiences/football-goal-poacher-soccer/7279132638874364/" target="_blank" rel="noopener">Meta Quest Store →</a><a class="cardlink" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener">Trailer on YouTube →</a></div>
+      </div>
+    </article>
+    <article class="card" id="rainbow-agent">
+      <a class="media" href="https://play.google.com/store/apps/details?id=com.mirai.rainbow.agent.blend.in" target="_blank" rel="noopener"><img class="" src="assets/rainbow-agent.jpg" alt="Rainbow Agent: Disguise Master screenshot" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span>Android</span><span>2022 – 2024 · Mirai Studio</span></div>
+        <h3>Rainbow Agent: Disguise Master</h3>
+        <span class="rolechip">Sole Unity developer</span>
+        <p>Built the whole Unity side of this mobile game, working with a game designer, a QA tester and a product manager from prototype to release.</p>
+        <ul><li>Core gameplay, levels, gameplay AI, UI and animation</li><li>Ads, in-app purchases, Firebase Analytics and Remote Config</li><li>Owned the Android release</li></ul>
+        <div class="metrics"><span>1M+ downloads on Google Play</span></div>
+        <div class="tags"><span>Unity</span><span>C#</span><span>Mobile</span><span>Firebase</span><span>IAP</span></div>
+        <div class="links"><a class="cardlink" href="https://play.google.com/store/apps/details?id=com.mirai.rainbow.agent.blend.in" target="_blank" rel="noopener">Google Play →</a></div>
+      </div>
+    </article>
+    <article class="card" id="bike-master">
+      <a class="media" href="https://play.google.com/store/apps/details?id=com.mirai.obby.parkour.bike.challenge" target="_blank" rel="noopener"><img class="" src="assets/bike-master.jpg" alt="Bike Master Challenge screenshot" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span>Android</span><span>Mirai Studio</span></div>
+        <h3>Bike Master Challenge</h3>
+        <span class="rolechip">Performance &amp; controls (live game)</span>
+        <p>I joined this live game to fix its performance and improve how the bike handles. I did not build the full game.</p>
+        <ul><li>Reduced memory (RAM) usage and CPU load, bringing crash and ANR rates below Google Play&#x27;s Android vitals thresholds</li><li>Improved frame rate, removed frame spikes and cut rendering cost</li><li>Improved the bike controls</li></ul>
+        <div class="metrics"><span>10M+ downloads on Google Play</span></div>
+        <div class="tags"><span>Unity Profiler</span><span>Memory Profiler</span><span>Crash/ANR</span><span>Rendering</span></div>
+        <div class="links"><a class="cardlink" href="https://play.google.com/store/apps/details?id=com.mirai.obby.parkour.bike.challenge" target="_blank" rel="noopener">Google Play →</a></div>
+      </div>
+    </article>
+    <article class="card" id="street-hero">
+      <a class="media" href="https://store.steampowered.com/app/1274820/" target="_blank" rel="noopener"><img class="left" src="assets/street-hero.jpg" alt="Street Hero screenshot" loading="lazy"></a>
+      <div class="body">
+        <div class="meta"><span>PC (Steam)</span><span>2020</span></div>
+        <h3>Street Hero</h3>
+        <span class="rolechip">Solo developer · first Unity game</span>
+        <p>My first Unity project: a fast-paced third-person superhero action game that I built and released on Steam by myself.</p>
+        <ul><li>Third-person combat, flight and physics-based destruction in an open city</li><li>Released on Steam in August 2020 (no longer on sale)</li></ul>
+        <div class="metrics"><span>Mostly Positive: 74% of 51 Steam reviews</span></div>
+        <div class="tags"><span>Unity</span><span>C#</span><span>PC</span></div>
+        <div class="links"><a class="cardlink" href="https://store.steampowered.com/app/1274820/" target="_blank" rel="noopener">Steam page →</a></div>
+      </div>
+    </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Also</h2>
+    <ul class="also"><li><span>Meta Quest VR game for an international client</span><small>SETA International · 2020 – 2021</small></li><li><span>Real-time multiplayer FPS with Photon PUN</span><small>Icetea Lab · 2022</small></li><li><span>REST APIs with Node.js</span><small>SETA International · 2021 – 2022</small></li></ul>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p class="sub">Tools and areas I have used in shipped projects.</p>
+    <div class="skills"><div>Engine &amp; code</div><div>Unity, C#, gameplay systems, physics, animation / root motion, gameplay AI, custom Editor tools</div><div>XR</div><div>Meta Quest (standalone), Meta XR SDK, Meta Platform SDK, VR UI</div><div>Performance</div><div>Unity Profiler, Memory Profiler, CPU / GPU / memory optimization, crash &amp; ANR fixes, LOD, shaders, compute shaders</div><div>Mobile &amp; live ops</div><div>Android releases, ads, IAP, Firebase Analytics, Remote Config, Addressables</div><div>Multiplayer &amp; backend</div><div>Photon PUN, REST APIs, Node.js</div><div>AI-assisted development</div><div>Agentic coding loops, multi-agent workflows with parallel sub-agents, cross-model QA, agent-driven play-testing</div></div>
+  </section>
+
+  <section>
+    <h2>How I work</h2>
+    <div class="how"><div><b>I ship</b><p>I have taken games from prototype to store release, both solo and in small teams.</p></div><div><b>Clear, written communication</b><p>Async-friendly. I keep you updated in writing, in English, with builds you can test.</p></div><div><b>Remote, GMT+7</b><p>Based in Hanoi, Vietnam. Open to remote contract and full-time work.</p></div><div><b>AI-accelerated, human-verified</b><p>Agents write, test and play-test in parallel; a second model checks their work, and I review everything that ships. I follow your team&#x27;s rules on AI tools.</p></div></div>
+  </section>
+
+  <div class="cta" id="contact">
+    <h2>Working on a Unity or Meta Quest game?</h2>
+    <p>Tell me about your project and what you need.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:trandangducbkhn@gmail.com">Email me</a>
+      <a class="btn" href="https://linkedin.com/in/tran-duc-85b570175/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <footer>Tran Dang Duc · Hanoi, Vietnam (GMT+7) · B.Eng. Information Technology, Hanoi University of Science and Technology</footer>
+</div>
+<script>
+document.querySelectorAll('.media.video').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    // YouTube refuses embeds without a referrer (Error 153), which is the
+    // case for pages opened from disk; let the link open YouTube instead.
+    if (location.protocol === 'file:') return;
+    e.preventDefault();
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&rel=0';
+    f.title = 'Trailer';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    f.referrerPolicy = 'strict-origin-when-cross-origin';
+    var box = document.createElement('div');
+    box.className = 'media';
+    box.appendChild(f);
+    a.replaceWith(box);
+  });
+});
+</script>
+</body>
+</html>
