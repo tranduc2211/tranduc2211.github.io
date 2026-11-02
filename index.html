@@ -91,19 +91,6 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
     <h2>Selected work</h2>
     <p class="sub">What I built on each project, and what I didn't.</p>
     <div class="grid">
-    <article class="card featured" id="goal-poacher">
-      <a class="media video" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener" data-yt="ku2OKv7F0FQ"><img src="assets/goal-poacher.jpg" alt="Football: Goal Poacher (Soccer) key art" loading="lazy"><span class="play" aria-hidden="true"></span><span class="playlabel">Watch trailer</span></a>
-      <div class="body">
-        <div class="meta"><span>Meta Quest</span><span>2024 – 2026</span></div>
-        <h3>Football: Goal Poacher (Soccer)</h3>
-        <span class="rolechip">Solo developer</span>
-        <p>A VR football game for Meta Quest that I built on my own, from the first prototype to store release.</p>
-        <ul><li>Gameplay AI, animation, progression and VR UI</li><li>Data-driven Unity Editor tools for creating and tuning content</li><li>Meta XR and Meta Platform services; CPU, memory and rendering optimization for standalone Quest; custom shaders</li><li>Hand-coded at first; in recent months I moved to an agentic AI workflow: multiple coding sub-agents work in parallel, while a separate model runs QA, reviewing screenshots, verifying every change and play-testing the game itself</li></ul>
-        
-        <div class="tags"><span>Unity</span><span>C#</span><span>Meta XR SDK</span><span>Standalone Quest</span><span>Shaders</span><span>Multi-agent AI workflow</span></div>
-        <div class="links"><a class="cardlink" href="https://www.meta.com/experiences/football-goal-poacher-soccer/7279132638874364/" target="_blank" rel="noopener">Meta Quest Store →</a><a class="cardlink" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener">Trailer on YouTube →</a></div>
-      </div>
-    </article>
     <article class="card" id="rainbow-agent">
       <a class="media" href="https://play.google.com/store/apps/details?id=com.mirai.rainbow.agent.blend.in" target="_blank" rel="noopener"><img class="" src="assets/rainbow-agent.jpg" alt="Rainbow Agent: Disguise Master screenshot" loading="lazy"></a>
       <div class="body">
@@ -126,8 +113,21 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
         <p>I joined this hyper-casual game to fix its performance and improve how the bike handles. I did not build the full game.</p>
         <ul><li>Reduced memory (RAM) usage and CPU load, bringing crash and ANR rates below Google Play&#x27;s Android vitals thresholds</li><li>Raised average FPS on devices under 2GB RAM from 30 to 50, removed frame spikes and cut rendering cost</li><li>Improved the bike controls</li></ul>
         <div class="metrics"><span>10M+ downloads on Google Play</span></div>
-        <div class="tags"><span>Unity Profiler</span><span>Memory Profiler</span><span>Crash/ANR</span><span>Rendering</span></div>
+        <div class="tags"><span>Unity Profiler</span><span>Memory Profiler</span><span>Frame Debugger</span><span>Crash/ANR</span><span>Rendering</span></div>
         <div class="links"><a class="cardlink" href="https://play.google.com/store/apps/details?id=com.mirai.obby.parkour.bike.challenge" target="_blank" rel="noopener">Google Play →</a></div>
+      </div>
+    </article>
+    <article class="card featured" id="goal-poacher">
+      <a class="media video" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener" data-yt="ku2OKv7F0FQ"><img src="assets/goal-poacher.jpg" alt="Football: Goal Poacher (Soccer) key art" loading="lazy"><span class="play" aria-hidden="true"></span><span class="playlabel">Watch trailer</span></a>
+      <div class="body">
+        <div class="meta"><span>Meta Quest</span><span>2024 – 2026</span></div>
+        <h3>Football: Goal Poacher (Soccer)</h3>
+        <span class="rolechip">Solo developer</span>
+        <p>A VR football game for Meta Quest that I built on my own, from the first prototype to store release.</p>
+        <ul><li>Gameplay AI, animation, progression and VR UI</li><li>Data-driven Unity Editor tools for creating and tuning content</li><li>Meta XR and Meta Platform services; CPU, memory and rendering optimization for standalone Quest; custom shaders</li><li>Hand-coded at first; in recent months I moved to an agentic AI workflow: multiple coding sub-agents work in parallel, while a separate model runs QA, reviewing screenshots, verifying every change and play-testing the game itself</li></ul>
+        
+        <div class="tags"><span>Unity</span><span>C#</span><span>Meta XR SDK</span><span>Standalone Quest</span><span>Shaders</span><span>Multi-agent AI workflow</span></div>
+        <div class="links"><a class="cardlink" href="https://www.meta.com/experiences/football-goal-poacher-soccer/7279132638874364/" target="_blank" rel="noopener">Meta Quest Store →</a><a class="cardlink" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener">Trailer on YouTube →</a></div>
       </div>
     </article>
     <article class="card" id="street-hero">
@@ -154,7 +154,7 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
   <section>
     <h2>Skills</h2>
     <p class="sub">Tools and areas I have used in shipped projects.</p>
-    <div class="skills"><div>Engine &amp; code</div><div>Unity, C#, gameplay systems, physics, animation / root motion, gameplay AI, custom Editor tools</div><div>XR</div><div>Meta Quest (standalone), Meta XR SDK, Meta Platform SDK, VR UI</div><div>Performance</div><div>Unity Profiler, Memory Profiler, CPU / GPU / memory optimization, crash &amp; ANR fixes, LOD, shaders, compute shaders</div><div>Mobile</div><div>Android releases, ads, IAP, Firebase Analytics, Remote Config</div><div>Multiplayer</div><div>Photon PUN</div><div>AI-assisted development</div><div>Claude, ChatGPT, DeepSeek; agents via Unity MCP, parallel sub-agents, cross-model QA, agent-driven play-testing; AI image, 3D model and animation generation</div></div>
+    <div class="skills"><div>Engine &amp; code</div><div>Unity, C#, gameplay systems, physics, animation / root motion, gameplay AI, custom Editor tools</div><div>XR</div><div>Meta Quest (standalone), Meta XR SDK, Meta Platform SDK, VR UI</div><div>Performance</div><div>Unity Profiler, Memory Profiler, Frame Debugger, CPU / GPU / memory optimization, crash &amp; ANR fixes, LOD, shaders, compute shaders</div><div>Mobile</div><div>Android releases, ads, IAP, Firebase Analytics, Remote Config</div><div>Multiplayer</div><div>Photon PUN</div><div>AI-assisted development</div><div>Claude, ChatGPT, DeepSeek; agents via Unity MCP, parallel sub-agents, cross-model QA, agent-driven play-testing; AI image, 3D model and animation generation</div></div>
   </section>
 
   <section>
