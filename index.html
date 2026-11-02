@@ -23,10 +23,6 @@ h1{font-size:clamp(36px,6vw,56px);line-height:1.08;margin:0 0 10px;letter-spacin
 .btn{display:inline-block;padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--line);color:var(--text);background:var(--panel)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:#06121a}
 .btn:hover{text-decoration:none;filter:brightness(1.08)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:44px 0 0}
-.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.stat b{display:block;font-size:24px;line-height:1.2}
-.stat span{color:var(--muted);font-size:14px}
 section{padding:56px 0 8px}
 h2{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
 .sub{color:var(--muted);margin:0 0 26px}
@@ -74,7 +70,7 @@ h2{font-size:28px;margin:0 0 6px;letter-spacing:-.01em}
 .media.video:hover .play{background:var(--accent)}
 .media iframe{width:100%;height:100%;border:0;display:block}
 footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
-@media (max-width:860px){.card.featured{display:flex}.card.featured .media{margin:0;border-radius:0}.grid,.how{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:1fr 1fr}.skills{grid-template-columns:1fr}.skills div:nth-child(odd){border-bottom:0;padding-bottom:4px}.skills div:nth-child(even){padding-top:0}header.hero{padding-top:56px}.cta{padding:28px 20px}}
+@media (max-width:860px){.card.featured{display:flex}.card.featured .media{margin:0;border-radius:0}.grid,.how{grid-template-columns:minmax(0,1fr)}.skills{grid-template-columns:1fr}.skills div:nth-child(odd){border-bottom:0;padding-bottom:4px}.skills div:nth-child(even){padding-top:0}header.hero{padding-top:56px}.cta{padding:28px 20px}}
 </style>
 </head>
 <body>
@@ -83,17 +79,11 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
     <p class="eyebrow">Available for remote work</p>
     <h1>Tran Dang Duc</h1>
     <p class="role">Game Developer (Unity)</p>
-    <p class="lead">I build and ship Unity games for Meta Quest, mobile and PC, taking them from first prototype to store release.</p>
+    <p class="lead">I have 5 years of experience building and shipping Unity games for Meta Quest, mobile and PC, taking them from first prototype to store release.</p>
     <div class="btns">
       <a class="btn primary" href="mailto:trandangducbkhn@gmail.com">Email me</a>
       <a class="btn" href="https://linkedin.com/in/tran-duc-85b570175/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn" href="#work">See my work</a>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>6 years</b><span>building games with Unity</span></div>
-      <div class="stat"><b>11M+</b><span>Google Play downloads on games I worked on</span></div>
-      <div class="stat"><b>4.6★</b><span>my solo Meta Quest game (45 ratings)</span></div>
-      <div class="stat"><b>3 platforms</b><span>Meta Quest · Steam · Android</span></div>
     </div>
   </header>
 
@@ -107,9 +97,9 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
         <div class="meta"><span>Meta Quest</span><span>2024 – 2026</span></div>
         <h3>Football: Goal Poacher (Soccer)</h3>
         <span class="rolechip">Solo developer</span>
-        <p>A VR football game for Meta Quest that I built entirely on my own, from the first prototype to store release.</p>
-        <ul><li>Physics-driven VR gameplay, gameplay AI, animation, progression and VR UI</li><li>Data-driven Unity Editor tools for creating and tuning content</li><li>Meta XR and Meta Platform services; CPU, memory and rendering optimization for standalone Quest; custom shaders</li><li>Built with an agentic AI workflow: I orchestrate multiple coding sub-agents in parallel, while a separate model runs QA, reviewing screenshots, verifying every change and play-testing the game itself</li></ul>
-        <div class="metrics"><span>4.6★ on the Meta Quest Store (45 ratings)</span><span>Early Access</span></div>
+        <p>A VR football game for Meta Quest that I built on my own, from the first prototype to store release.</p>
+        <ul><li>Gameplay AI, animation, progression and VR UI</li><li>Data-driven Unity Editor tools for creating and tuning content</li><li>Meta XR and Meta Platform services; CPU, memory and rendering optimization for standalone Quest; custom shaders</li><li>Hand-coded at first; in recent months I moved to an agentic AI workflow: multiple coding sub-agents work in parallel, while a separate model runs QA, reviewing screenshots, verifying every change and play-testing the game itself</li></ul>
+        
         <div class="tags"><span>Unity</span><span>C#</span><span>Meta XR SDK</span><span>Standalone Quest</span><span>Shaders</span><span>Multi-agent AI workflow</span></div>
         <div class="links"><a class="cardlink" href="https://www.meta.com/experiences/football-goal-poacher-soccer/7279132638874364/" target="_blank" rel="noopener">Meta Quest Store →</a><a class="cardlink" href="https://www.youtube.com/watch?v=ku2OKv7F0FQ" target="_blank" rel="noopener">Trailer on YouTube →</a></div>
       </div>
@@ -117,10 +107,10 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
     <article class="card" id="rainbow-agent">
       <a class="media" href="https://play.google.com/store/apps/details?id=com.mirai.rainbow.agent.blend.in" target="_blank" rel="noopener"><img class="" src="assets/rainbow-agent.jpg" alt="Rainbow Agent: Disguise Master screenshot" loading="lazy"></a>
       <div class="body">
-        <div class="meta"><span>Android</span><span>2022 – 2024 · Mirai Studio</span></div>
+        <div class="meta"><span>Android</span><span>Mirai Studio</span></div>
         <h3>Rainbow Agent: Disguise Master</h3>
         <span class="rolechip">Sole Unity developer</span>
-        <p>Built the whole Unity side of this mobile game, working with a game designer, a QA tester and a product manager from prototype to release.</p>
+        <p>Built the whole Unity side of this hybrid-casual mobile game, working with a game designer, a QA tester and a product manager from prototype to release.</p>
         <ul><li>Core gameplay, levels, gameplay AI, UI and animation</li><li>Ads, in-app purchases, Firebase Analytics and Remote Config</li><li>Owned the Android release</li></ul>
         <div class="metrics"><span>1M+ downloads on Google Play</span></div>
         <div class="tags"><span>Unity</span><span>C#</span><span>Mobile</span><span>Firebase</span><span>IAP</span></div>
@@ -132,9 +122,9 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
       <div class="body">
         <div class="meta"><span>Android</span><span>Mirai Studio</span></div>
         <h3>Bike Master Challenge</h3>
-        <span class="rolechip">Performance &amp; controls (live game)</span>
-        <p>I joined this live game to fix its performance and improve how the bike handles. I did not build the full game.</p>
-        <ul><li>Reduced memory (RAM) usage and CPU load, bringing crash and ANR rates below Google Play&#x27;s Android vitals thresholds</li><li>Improved frame rate, removed frame spikes and cut rendering cost</li><li>Improved the bike controls</li></ul>
+        <span class="rolechip">Performance &amp; controls</span>
+        <p>I joined this hyper-casual game to fix its performance and improve how the bike handles. I did not build the full game.</p>
+        <ul><li>Reduced memory (RAM) usage and CPU load, bringing crash and ANR rates below Google Play&#x27;s Android vitals thresholds</li><li>Raised average FPS on devices under 2GB RAM from 30 to 50, removed frame spikes and cut rendering cost</li><li>Improved the bike controls</li></ul>
         <div class="metrics"><span>10M+ downloads on Google Play</span></div>
         <div class="tags"><span>Unity Profiler</span><span>Memory Profiler</span><span>Crash/ANR</span><span>Rendering</span></div>
         <div class="links"><a class="cardlink" href="https://play.google.com/store/apps/details?id=com.mirai.obby.parkour.bike.challenge" target="_blank" rel="noopener">Google Play →</a></div>
@@ -164,7 +154,7 @@ footer{color:var(--muted);font-size:14px;padding:36px 0 48px;text-align:center}
   <section>
     <h2>Skills</h2>
     <p class="sub">Tools and areas I have used in shipped projects.</p>
-    <div class="skills"><div>Engine &amp; code</div><div>Unity, C#, gameplay systems, physics, animation / root motion, gameplay AI, custom Editor tools</div><div>XR</div><div>Meta Quest (standalone), Meta XR SDK, Meta Platform SDK, VR UI</div><div>Performance</div><div>Unity Profiler, Memory Profiler, CPU / GPU / memory optimization, crash &amp; ANR fixes, LOD, shaders, compute shaders</div><div>Mobile &amp; live ops</div><div>Android releases, ads, IAP, Firebase Analytics, Remote Config, Addressables</div><div>Multiplayer &amp; backend</div><div>Photon PUN, REST APIs, Node.js</div><div>AI-assisted development</div><div>Agentic coding loops, multi-agent workflows with parallel sub-agents, cross-model QA, agent-driven play-testing</div></div>
+    <div class="skills"><div>Engine &amp; code</div><div>Unity, C#, gameplay systems, physics, animation / root motion, gameplay AI, custom Editor tools</div><div>XR</div><div>Meta Quest (standalone), Meta XR SDK, Meta Platform SDK, VR UI</div><div>Performance</div><div>Unity Profiler, Memory Profiler, CPU / GPU / memory optimization, crash &amp; ANR fixes, LOD, shaders, compute shaders</div><div>Mobile</div><div>Android releases, ads, IAP, Firebase Analytics, Remote Config</div><div>Multiplayer</div><div>Photon PUN</div><div>AI-assisted development</div><div>Claude, ChatGPT, DeepSeek; agents via Unity MCP, parallel sub-agents, cross-model QA, agent-driven play-testing; AI image, 3D model and animation generation</div></div>
   </section>
 
   <section>
